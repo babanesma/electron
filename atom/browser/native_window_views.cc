@@ -6,6 +6,7 @@
 
 #include <string>
 #include <vector>
+#include "stdafx.h"
 
 #include "atom/browser/ui/views/menu_bar.h"
 #include "atom/browser/ui/views/menu_layout.h"
@@ -745,6 +746,10 @@ void NativeWindowViews::SetSkipTaskbar(bool skip) {
 
 void NativeWindowViews::SetKiosk(bool kiosk) {
   SetFullScreen(kiosk);
+}
+
+void NativeWindowViews::SetFullKiosk(bool fullkiosk) {
+  SetKiosk(fullkiosk);
 }
 
 bool NativeWindowViews::IsKiosk() {

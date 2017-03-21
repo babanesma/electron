@@ -572,6 +572,10 @@ void Window::SetKiosk(bool kiosk) {
   window_->SetKiosk(kiosk);
 }
 
+void Window::SetFullKiosk(bool kiosk) {
+  window_->SetFullKiosk(kiosk);
+}
+
 bool Window::IsKiosk() {
   return window_->IsKiosk();
 }
@@ -943,6 +947,7 @@ void Window::BuildPrototype(v8::Isolate* isolate,
       .SetMethod("flashFrame", &Window::FlashFrame)
       .SetMethod("setSkipTaskbar", &Window::SetSkipTaskbar)
       .SetMethod("setKiosk", &Window::SetKiosk)
+      .SetMethod("setFullKiosk", &Window::SetFullKiosk)
       .SetMethod("isKiosk", &Window::IsKiosk)
       .SetMethod("setBackgroundColor", &Window::SetBackgroundColor)
       .SetMethod("setHasShadow", &Window::SetHasShadow)

@@ -96,6 +96,7 @@ class NativeWindowViews : public NativeWindow,
   void FlashFrame(bool flash) override;
   void SetSkipTaskbar(bool skip) override;
   void SetKiosk(bool kiosk) override;
+  void SetFullKiosk(bool fullkiosk) override;
   bool IsKiosk() override;
   void SetBackgroundColor(const std::string& color_name) override;
   void SetHasShadow(bool has_shadow) override;

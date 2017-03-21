@@ -151,6 +151,7 @@ class Window : public mate::TrackableObject<Window>,
   void FlashFrame(bool flash);
   void SetSkipTaskbar(bool skip);
   void SetKiosk(bool kiosk);
+  void SetFullKiosk(bool fullkiosk);
   bool IsKiosk();
   void SetBackgroundColor(const std::string& color_name);
   void SetHasShadow(bool has_shadow);
